@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "ExternalStorageBuddy.SharedProject", "ExternalStorageBuddy.SharedProject\ExternalStorageBuddy.SharedProject.shproj", "{B8439A4E-2B4A-4F64-B087-24489740F175}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalStorageBuddy.Android", "ExternalStorageBuddy.Android\ExternalStorageBuddy.Android.csproj", "{B64D2BE0-A882-4F47-8105-13DBF07B93F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalStorageBuddy.iOS", "ExternalStorageBuddy.iOS\ExternalStorageBuddy.iOS.csproj", "{E71F3053-056C-4381-9638-048ED73BDFF6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExternalStorageBuddy.WindowsDX", "ExternalStorageBuddy.WindowsDX\ExternalStorageBuddy.WindowsDX.csproj", "{40194543-DD9F-41CF-BC72-19966BEFF4E7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{11F754AC-EAC5-4777-AD28-25AAB1132056}"
+	ProjectSection(SolutionItems) = preProject
+		buildNugetPackages.ps1 = buildNugetPackages.ps1
+		ExternalStorageBuddy.nuspec = ExternalStorageBuddy.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		ExternalStorageBuddy.SharedProject\ExternalStorageBuddy.SharedProject.projitems*{40194543-dd9f-41cf-bc72-19966beff4e7}*SharedItemsImports = 4
+		ExternalStorageBuddy.SharedProject\ExternalStorageBuddy.SharedProject.projitems*{b64d2be0-a882-4f47-8105-13dbf07b93f8}*SharedItemsImports = 4
+		ExternalStorageBuddy.SharedProject\ExternalStorageBuddy.SharedProject.projitems*{b8439a4e-2b4a-4f64-b087-24489740f175}*SharedItemsImports = 13
+		ExternalStorageBuddy.SharedProject\ExternalStorageBuddy.SharedProject.projitems*{e71f3053-056c-4381-9638-048ed73bdff6}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B64D2BE0-A882-4F47-8105-13DBF07B93F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64D2BE0-A882-4F47-8105-13DBF07B93F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64D2BE0-A882-4F47-8105-13DBF07B93F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64D2BE0-A882-4F47-8105-13DBF07B93F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E71F3053-056C-4381-9638-048ED73BDFF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E71F3053-056C-4381-9638-048ED73BDFF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E71F3053-056C-4381-9638-048ED73BDFF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E71F3053-056C-4381-9638-048ED73BDFF6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40194543-DD9F-41CF-BC72-19966BEFF4E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40194543-DD9F-41CF-BC72-19966BEFF4E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40194543-DD9F-41CF-BC72-19966BEFF4E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40194543-DD9F-41CF-BC72-19966BEFF4E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {99A7E4AD-CB0F-4DB6-BB3E-938EBE78EE95}
+	EndGlobalSection
+EndGlobal
