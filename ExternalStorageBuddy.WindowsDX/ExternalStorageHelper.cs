@@ -9,6 +9,17 @@ namespace ExternalStorageBuddy.WindowsDX
 
 		public bool HasPermission => true;
 
+		public bool HasResult
+		{
+			get
+			{
+				return true;
+			}
+			set
+			{
+			}
+		}
+
 		public event EventHandler<ExternalStoragePermissionEventArgs> StoragePermissionGranted;
 
 		public Task AskPermission()

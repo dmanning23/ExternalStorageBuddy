@@ -27,11 +27,25 @@ namespace ExternalStorageBuddy.Android
 			}
 		}
 
+		public bool HasResult { get; set; }
+
 		public event EventHandler<ExternalStoragePermissionEventArgs> StoragePermissionGranted;
 
 		#endregion //Properties
 
 		#region Methods
+
+		public ExternalStorageHelper()
+		{
+			HasResult = false;
+
+			StoragePermissionGranted += ExternalStorageHelper_StoragePermissionGranted;
+		}
+
+		private void ExternalStorageHelper_StoragePermissionGranted(object sender, ExternalStoragePermissionEventArgs e)
+		{
+			HasResult = true;
+		}
 
 		public async Task AskPermission()
 		{
@@ -53,11 +67,6 @@ namespace ExternalStorageBuddy.Android
 			}
 			else
 			{
-				//if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Permission.Storage))
-				//{
-				//	await DisplayAlert("Need location", "Gunna need that location", "OK");
-				//}
-
 				var results = await CrossPermissions.Current.RequestPermissionsAsync(new[] { Permission.Storage });
 				if (null != StoragePermissionGranted)
 				{
